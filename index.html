@@ -1,57 +1,164 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media Analytics Tool - Demo</title>
+    <title>Social Media Analytics Tool - Gabriel Demetrios Lafis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #007bff;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 30px;
+            max-width: 960px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            flex-grow: 1;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
         }
-        h1, h2 {
-            color: #0056b3;
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            font-size: 1.8rem;
         }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
         a {
-            color: #0056b3;
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: var(--primary-color);
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
+
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: auto;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .container {
+                margin: 1rem auto;
+                padding: 0 1rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <h1>Social Media Analytics Tool</h1>
-        <p>Bem-vindo à página de demonstração da Ferramenta de Análise de Mídias Sociais de Gabriel Demetrios Lafis.</p>
-        <p>Este projeto é uma demonstração profissional de habilidades em ciência de dados e engenharia de software, focada em análise de mídias sociais, rastreamento de sentimento e análise de tendências.</p>
-        
-        <h2>Visão Geral do Projeto</h2>
-        <p>O core da ferramenta é implementado em Python, utilizando bibliotecas como Pandas e NumPy para processamento e análise de dados. Embora esta página sirva como um placeholder para uma demonstração interativa, a funcionalidade principal reside no código Python do repositório.</p>
-        
-        <h2>Como Funciona</h2>
-        <p>A ferramenta simula a coleta e análise de dados de mídias sociais, fornecendo insights sobre o sentimento e as tendências. Para uma demonstração interativa completa, seria necessário um frontend web que se comunicasse com um backend Python (por exemplo, usando Flask ou FastAPI).</p>
-        
-        <h2>Acesse o Repositório</h2>
-        <p>Para explorar o código-fonte, a documentação detalhada e as instruções de execução, visite o repositório GitHub:</p>
-        <p><a href="https://github.com/galafis/Social-Media-Analytics-Tool">github.com/galafis/Social-Media-Analytics-Tool</a></p>
+    </div>
 
-        <h2>Autor</h2>
-        <p>Desenvolvido por <strong>Gabriel Demetrios Lafis</strong>.</p>
+    <div class="container">
+        <div class="card">
+            <h2>Bem-vindo à Ferramenta de Análise de Mídias Sociais</h2>
+            <p>Este projeto, desenvolvido por <strong>Gabriel Demetrios Lafis</strong>, é uma demonstração robusta de habilidades em ciência de dados e engenharia de software, focada na análise de mídias sociais, rastreamento de sentimento e identificação de tendências.</p>
+            <p>A ferramenta oferece insights valiosos a partir de dados de plataformas sociais, utilizando técnicas avançadas de processamento e análise.</p>
+            <a href="https://github.com/galafis/Social-Media-Analytics-Tool" class="button">Acesse o Repositório no GitHub</a>
+        </div>
+
+        <div class="card">
+            <h2>Visão Geral e Funcionalidades</h2>
+            <p>O coração desta ferramenta é implementado em Python, aproveitando o poder de bibliotecas como Pandas, NumPy e Scikit-learn para processamento de dados, análise estatística e modelagem preditiva. As principais funcionalidades incluem:</p>
+            <ul>
+                <li><strong>Análise de Sentimento:</strong> Avaliação do tom emocional de textos em mídias sociais.</li>
+                <li><strong>Detecção de Tendências:</strong> Identificação de tópicos emergentes e populares.</li>
+                <li><strong>Visualização de Dados:</strong> Geração de gráficos e dashboards para fácil compreensão dos insights.</li>
+                <li><strong>Integração de Dados:</strong> Capacidade de processar dados de diversas fontes de mídias sociais.</li>
+            </ul>
+            <p>Embora esta página sirva como uma vitrine e um ponto de partida para a documentação, a funcionalidade completa e interativa reside no código-fonte do repositório, que pode ser executado localmente ou implantado em um ambiente de backend.</p>
+        </div>
+
+        <div class="card">
+            <h2>Documentação Detalhada</h2>
+            <p>Para uma compreensão aprofundada da arquitetura, instalação, uso e contribuição para o projeto, por favor, consulte a documentação completa.</p>
+            <a href="https://github.com/galafis/Social-Media-Analytics-Tool/blob/main/README.md" class="button">Ver Documentação (README.md)</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Gabriel Demetrios Lafis. Todos os direitos reservados.</p>
     </div>
 </body>
 </html>
