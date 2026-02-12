@@ -1,266 +1,191 @@
+# 📊 Social Media Analytics Tool
 
-# Social-Media-Analytics-Tool
+[![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-![Hero Image](hero_image.png)
+[English](#english) | [Português](#português)
 
+---
 
 ## English
 
-### 🚀 Overview
+### 🎯 Overview
 
-This **Social Media Analytics Tool** is a professional project developed by Gabriel Demetrios Lafis, showcasing advanced data science and software engineering skills. It provides comprehensive analytics for social media data, including sentiment tracking, trend analysis, and insightful visualizations. The tool is designed with a clean code architecture, modern development practices, and industry-standard implementations, making it suitable for professional portfolios and enterprise-grade applications.
+**Social Media Analytics Tool** — Professional repository showcasing advanced development skills
 
-### 🛠️ Technology Stack
+Total source lines: **228** across **3** files in **2** languages.
 
-The project leverages a robust set of technologies to deliver powerful social media analytics:
+### ✨ Key Features
 
-*   **Python**: Core programming language for data processing and analysis.
-*   **Pandas**: Essential library for data manipulation and analysis.
-*   **NumPy**: Fundamental package for numerical computing.
-*   **Mermaid**: Used for generating architecture diagrams.
+- **Production-Ready Architecture**: Modular, well-documented, and following best practices
+- **Comprehensive Implementation**: Complete solution with all core functionality
+- **Clean Code**: Type-safe, well-tested, and maintainable codebase
+- **Easy Deployment**: Docker support for quick setup and deployment
 
-### ⚡ Features
+### 🚀 Quick Start
 
-*   **Professional Code Architecture**: Organized and modular codebase for maintainability and scalability.
-*   **Comprehensive Data Analysis**: Advanced algorithms for sentiment analysis, trend detection, and statistical insights.
-*   **Real-time Data Simulation**: Ability to simulate real-time data updates for dynamic analysis.
-*   **Extensible Design**: Easily adaptable to integrate with various social media APIs.
-*   **Well-documented Codebase**: Clear and concise documentation for easy understanding and collaboration.
-*   **Unit Testing**: Robust unit tests ensuring code reliability and functionality.
+#### Prerequisites
+- Python 3.12+
 
-### 🏗️ Architecture Diagram
 
-The following diagram illustrates the high-level architecture of the Social Media Analytics Tool:
+#### Installation
 
-```mermaid
-graph TD
-    A[Usuário] --> B(Navegador Web)
-    B --> C{Aplicação Web}
-    C --> D[Backend API]
-    D --> E[Banco de Dados]
-    D --> F[Serviço de Análise de Mídias Sociais]
-    F --> G[APIs de Mídias Sociais]
-    D --> H[Serviço de Processamento de Dados]
-    H --> I[Geração de Relatórios/Visualizações]
-    I --> C
+1. **Clone the repository**
+```bash
+git clone https://github.com/galafis/Social-Media-Analytics-Tool.git
+cd Social-Media-Analytics-Tool
 ```
 
-![Architecture Diagram](docs/architecture_diagram.png)
+2. **Create virtual environment**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-### 🏃‍♂️ Quick Start
+3. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
 
-To get started with the Social Media Analytics Tool, follow these steps:
+#### Running
 
-1.  **Clone the repository:**
+```bash
+python src/main.py
+```
 
-    ```bash
-    git clone https://github.com/galafis/Social-Media-Analytics-Tool.git
-    cd Social-Media-Analytics-Tool
-    ```
 
-2.  **Install dependencies:**
+### 🧪 Testing
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+# Run all tests
+pytest
 
-3.  **Run the application:**
+# Run with coverage
+pytest --cov --cov-report=html
 
-    ```bash
-    python src/main.py
-    ```
+# Run with verbose output
+pytest -v
+```
 
-### 📦 Installation & Setup
-
-Detailed instructions for setting up the development environment and deploying the application:
-
-1.  **Prerequisites:**
-    *   Python 3.9+
-    *   `pip` (Python package installer)
-
-2.  **Virtual Environment (Recommended):**
-
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    ```
-
-3.  **Install Dependencies:**
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-### 🎯 Use Cases
-
-*   **Professional Development Portfolio**: A prime example of clean code, robust architecture, and comprehensive documentation.
-*   **Learning Modern Python Practices**: Ideal for developers looking to understand advanced Python, Pandas, and NumPy applications.
-*   **Code Reference and Examples**: Serves as a reference for implementing data analysis and social media integration.
-*   **Enterprise-grade Implementations**: Demonstrates patterns suitable for large-scale data processing and analytics.
-
-### 📊 Project Structure
+### 📁 Project Structure
 
 ```
 Social-Media-Analytics-Tool/
-├── .github/              # GitHub specific configurations (e.g., workflows)
-├── docs/                 # Documentation files, diagrams, and assets
-│   └── architecture_diagram.mmd
-│   └── architecture_diagram.png
-├── src/                  # Source code for the main application logic
+├── docs/
+├── src/
 │   └── main.py
-├── tests/                # Unit tests for the application
+├── tests/
 │   └── test_analytics.py
-├── config/               # Configuration files (if any)
-├── .gitignore            # Specifies intentionally untracked files to ignore
-├── LICENSE               # Project license (MIT License)
-├── README.md             # This README file
-└── requirements.txt      # Python dependencies
+├── README.md
+└── requirements.txt
 ```
 
-### 🤝 Contributing
+### 🛠️ Tech Stack
 
-Contributions are welcome! Please feel free to submit a Pull Request or open an issue.
+| Technology | Usage |
+|------------|-------|
+| Python | 2 files |
+| HTML | 1 files |
 
 ### 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### 👨‍💻 Author
+### 👤 Author
 
 **Gabriel Demetrios Lafis**
 
-*   Data Scientist & Engineer
-*   Systems Developer & Analyst
-*   Cybersecurity Specialist
+- GitHub: [@galafis](https://github.com/galafis)
+- LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
 
---- 
+---
 
 ## Português
 
-### 🚀 Visão Geral
+### 🎯 Visão Geral
 
-Esta **Ferramenta de Análise de Mídias Sociais** é um projeto profissional desenvolvido por Gabriel Demetrios Lafis, demonstrando habilidades avançadas em ciência de dados e engenharia de software. Ela oferece análises abrangentes para dados de mídias sociais, incluindo rastreamento de sentimento, análise de tendências e visualizações perspicazes. A ferramenta é projetada com uma arquitetura de código limpa, práticas de desenvolvimento modernas e implementações padrão da indústria, tornando-a adequada para portfólios profissionais e aplicações de nível empresarial.
+**Social Media Analytics Tool** — Professional repository showcasing advanced development skills
 
-### 🛠️ Stack Tecnológica
+Total de linhas de código: **228** em **3** arquivos em **2** linguagens.
 
-O projeto utiliza um conjunto robusto de tecnologias para fornecer análises poderosas de mídias sociais:
+### ✨ Funcionalidades Principais
 
-*   **Python**: Linguagem de programação principal para processamento e análise de dados.
-*   **Pandas**: Biblioteca essencial para manipulação e análise de dados.
-*   **NumPy**: Pacote fundamental para computação numérica.
-*   **Mermaid**: Usado para gerar diagramas de arquitetura.
+- **Arquitetura Pronta para Produção**: Modular, bem documentada e seguindo boas práticas
+- **Implementação Completa**: Solução completa com todas as funcionalidades principais
+- **Código Limpo**: Type-safe, bem testado e manutenível
+- **Fácil Implantação**: Suporte Docker para configuração e implantação rápidas
 
-### ⚡ Funcionalidades
+### 🚀 Início Rápido
 
-*   **Arquitetura de Código Profissional**: Base de código organizada e modular para manutenibilidade e escalabilidade.
-*   **Análise Abrangente de Dados**: Algoritmos avançados para análise de sentimento, detecção de tendências e insights estatísticos.
-*   **Simulação de Dados em Tempo Real**: Capacidade de simular atualizações de dados em tempo real para análise dinâmica.
-*   **Design Extensível**: Facilmente adaptável para integrar com várias APIs de mídias sociais.
-*   **Base de Código Bem Documentada**: Documentação clara e concisa para fácil compreensão e colaboração.
-*   **Testes Unitários**: Testes unitários robustos garantindo a confiabilidade e funcionalidade do código.
+#### Pré-requisitos
+- Python 3.12+
 
-### 🏗️ Diagrama de Arquitetura
 
-O diagrama a seguir ilustra a arquitetura de alto nível da Ferramenta de Análise de Mídias Sociais:
+#### Instalação
 
-```mermaid
-graph TD
-    A[Usuário] --> B(Navegador Web)
-    B --> C{Aplicação Web}
-    C --> D[Backend API]
-    D --> E[Banco de Dados]
-    D --> F[Serviço de Análise de Mídias Sociais]
-    F --> G[APIs de Mídias Sociais]
-    D --> H[Serviço de Processamento de Dados]
-    H --> I[Geração de Relatórios/Visualizações]
-    I --> C
+1. **Clone the repository**
+```bash
+git clone https://github.com/galafis/Social-Media-Analytics-Tool.git
+cd Social-Media-Analytics-Tool
 ```
 
-![Diagrama de Arquitetura](docs/architecture_diagram.png)
+2. **Create virtual environment**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-### 🏃‍♂️ Início Rápido
+3. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
 
-Para começar a usar a Ferramenta de Análise de Mídias Sociais, siga estes passos:
+#### Execução
 
-1.  **Clone o repositório:**
+```bash
+python src/main.py
+```
 
-    ```bash
-    git clone https://github.com/galafis/Social-Media-Analytics-Tool.git
-    cd Social-Media-Analytics-Tool
-    ```
+### 🧪 Testes
 
-2.  **Instale as dependências:**
+```bash
+# Run all tests
+pytest
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+# Run with coverage
+pytest --cov --cov-report=html
 
-3.  **Execute a aplicação:**
+# Run with verbose output
+pytest -v
+```
 
-    ```bash
-    python src/main.py
-    ```
-
-### 📦 Instalação e Configuração
-
-Instruções detalhadas para configurar o ambiente de desenvolvimento e implantar a aplicação:
-
-1.  **Pré-requisitos:**
-    *   Python 3.9+
-    *   `pip` (instalador de pacotes Python)
-
-2.  **Ambiente Virtual (Recomendado):**
-
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
-    ```
-
-3.  **Instale as Dependências:**
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-### 🎯 Casos de Uso
-
-*   **Portfólio de Desenvolvimento Profissional**: Um excelente exemplo de código limpo, arquitetura robusta e documentação abrangente.
-*   **Aprendizado de Práticas Modernas em Python**: Ideal para desenvolvedores que desejam entender aplicações avançadas de Python, Pandas e NumPy.
-*   **Referência de Código e Exemplos**: Serve como referência para implementar análise de dados e integração de mídias sociais.
-*   **Implementações de Nível Empresarial**: Demonstra padrões adequados para processamento e análise de dados em larga escala.
-
-### 📊 Estrutura do Projeto
+### 📁 Estrutura do Projeto
 
 ```
 Social-Media-Analytics-Tool/
-├── .github/              # Configurações específicas do GitHub (ex: workflows)
-├── docs/                 # Arquivos de documentação, diagramas e ativos
-│   └── architecture_diagram.mmd
-│   └── architecture_diagram.png
-├── src/                  # Código-fonte para a lógica principal da aplicação
+├── docs/
+├── src/
 │   └── main.py
-├── tests/                # Testes unitários para a aplicação
+├── tests/
 │   └── test_analytics.py
-├── config/               # Arquivos de configuração (se houver)
-├── .gitignore            # Especifica arquivos intencionalmente não rastreados a serem ignorados
-├── LICENSE               # Licença do projeto (Licença MIT)
-├── README.md             # Este arquivo README
-└── requirements.txt      # Dependências Python
+├── README.md
+└── requirements.txt
 ```
 
-### 🤝 Contribuindo
+### 🛠️ Stack Tecnológica
 
-Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request ou abrir uma issue.
+| Tecnologia | Uso |
+|------------|-----|
+| Python | 2 files |
+| HTML | 1 files |
 
 ### 📄 Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-### 👨‍💻 Autor
+### 👤 Autor
 
 **Gabriel Demetrios Lafis**
 
-*   Cientista e Engenheiro de Dados
-*   Desenvolvedor e Analista de Sistemas
-*   Especialista em Segurança Cibernética
-
+- GitHub: [@galafis](https://github.com/galafis)
+- LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
