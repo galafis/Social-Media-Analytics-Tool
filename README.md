@@ -1,303 +1,157 @@
-# 📊 Social Media Analytics Tool
+# Social Media Analytics Tool
 
-> Professional repository showcasing advanced development skills
+Ferramenta simples de analise de dados sinteticos com pandas.
 
-[![Python](https://img.shields.io/badge/Python-3.12-3776AB.svg)](https://img.shields.io/badge/)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://img.shields.io/badge/)
-[![NumPy](https://img.shields.io/badge/NumPy-1.26-013243.svg)](https://img.shields.io/badge/)
-[![Pandas](https://img.shields.io/badge/Pandas-2.2-150458.svg)](https://img.shields.io/badge/)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB.svg)](https://python.org)
+[![pandas](https://img.shields.io/badge/pandas-2.0-150458.svg)](https://pandas.pydata.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-[English](#english) | [Português](#português)
+[English](#english) | [Portugues](#portugues)
+
+---
+
+## Portugues
+
+### Visao Geral
+
+Script Python que gera dados sinteticos simulando metricas de midias sociais e calcula estatisticas descritivas basicas usando pandas. Os dados sao gerados aleatoriamente — nao ha integracao com APIs reais de midias sociais.
+
+### Arquitetura
+
+```mermaid
+graph LR
+    A[Gerador de Dados Aleatorios] --> B[DataFrame pandas]
+    B --> C[value_counts - distribuicoes]
+    B --> D[mean - media de valores]
+    B --> E[Tendencias temporais]
+    C --> F[Resultados - dict]
+    D --> F
+    E --> F
+```
+
+### Funcionalidades
+
+- **Geracao de dados sinteticos** — 1000 registros com timestamp, valor, categoria, status e sentimento
+- **Estatisticas descritivas** — media de valores, distribuicoes por categoria/status/sentimento
+- **Tendencias temporais** — media de valores por data
+- **Exportacao** — resultados como dicionario Python
+
+### Como Executar
+
+```bash
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Executar analise
+python src/main.py
+
+# Executar testes
+pytest tests/test_analytics.py -v
+```
+
+### Estrutura do Projeto
+
+```
+Social-Media-Analytics-Tool/
+├── src/
+│   ├── __init__.py
+│   └── main.py                # Script principal (~104 linhas)
+├── tests/
+│   ├── __init__.py
+│   └── test_analytics.py      # Testes unitarios
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
+```
+
+### Tecnologias
+
+| Tecnologia | Uso |
+|------------|-----|
+| Python | Linguagem principal |
+| pandas | Manipulacao de dados |
+| NumPy | Geracao de numeros aleatorios |
+
+### Limitacoes
+
+- Nao conecta com APIs reais de midias sociais
+- Nao possui visualizacao, exportacao para arquivo, ou interface web
+- Dados sao inteiramente sinteticos/aleatorios
 
 ---
 
 ## English
 
-### 🎯 Overview
+### Overview
 
-**Social Media Analytics Tool** is a production-grade Python application complemented by HTML that showcases modern software engineering practices including clean architecture, comprehensive testing, containerized deployment, and CI/CD readiness.
+Python script that generates synthetic data simulating social media metrics and computes basic descriptive statistics using pandas. Data is randomly generated — there is no integration with real social media APIs.
 
-The codebase comprises **228 lines** of source code organized across **3 modules**, following industry best practices for maintainability, scalability, and code quality.
-
-### ✨ Key Features
-
-- **📊 Interactive Visualizations**: Dynamic charts with real-time data updates
-- **🎨 Responsive Design**: Adaptive layout for desktop and mobile devices
-- **📈 Data Aggregation**: Multi-dimensional data analysis and filtering
-- **📥 Export Capabilities**: PDF, CSV, and image export for reports
-- **🐳 Containerized**: Docker support for consistent deployment
-- **🏗️ Object-Oriented**: 2 core classes with clean architecture
-
-### 🏗️ Architecture
+### Architecture
 
 ```mermaid
-graph TB
-    subgraph Core["🏗️ Core"]
-        A[Main Module]
-        B[Business Logic]
-        C[Data Processing]
-    end
-    
-    subgraph Support["🔧 Support"]
-        D[Configuration]
-        E[Utilities]
-        F[Tests]
-    end
-    
-    A --> B --> C
-    D --> A
-    E --> B
-    F -.-> B
-    
-    style Core fill:#e1f5fe
-    style Support fill:#f3e5f5
+graph LR
+    A[Random Data Generator] --> B[pandas DataFrame]
+    B --> C[value_counts - distributions]
+    B --> D[mean - value averages]
+    B --> E[Time trends]
+    C --> F[Results - dict]
+    D --> F
+    E --> F
 ```
 
-### 🚀 Quick Start
+### Features
 
-#### Prerequisites
+- **Synthetic data generation** — 1000 records with timestamp, value, category, status, and sentiment
+- **Descriptive statistics** — value averages, distributions by category/status/sentiment
+- **Time trends** — value averages by date
+- **Export** — results as Python dictionary
 
-- Python 3.12+
-- pip (Python package manager)
-
-#### Installation
+### How to Run
 
 ```bash
-# Clone the repository
-git clone https://github.com/galafis/Social-Media-Analytics-Tool.git
-cd Social-Media-Analytics-Tool
-
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
 # Install dependencies
 pip install -r requirements.txt
-```
 
-#### Running
-
-```bash
-# Run the application
+# Run analysis
 python src/main.py
+
+# Run tests
+pytest tests/test_analytics.py -v
 ```
 
-### 🧪 Testing
-
-```bash
-# Run all tests
-pytest
-
-# Run with coverage report
-pytest --cov --cov-report=html
-
-# Run specific test module
-pytest tests/test_main.py -v
-
-# Run with detailed output
-pytest -v --tb=short
-```
-
-### 📁 Project Structure
+### Project Structure
 
 ```
 Social-Media-Analytics-Tool/
-├── docs/          # Documentation
-├── src/          # Source code
-│   └── main.py
-├── tests/         # Test suite
-│   └── test_analytics.py
-├── Dockerfile
+├── src/
+│   ├── __init__.py
+│   └── main.py                # Main script (~104 lines)
+├── tests/
+│   ├── __init__.py
+│   └── test_analytics.py      # Unit tests
+├── .gitignore
 ├── LICENSE
 ├── README.md
 └── requirements.txt
 ```
 
-### 📊 Performance Metrics
+### Technologies
 
-The engine calculates comprehensive performance metrics:
+| Technology | Usage |
+|------------|-------|
+| Python | Core language |
+| pandas | Data manipulation |
+| NumPy | Random number generation |
 
-| Metric | Description | Formula |
-|--------|-------------|---------|
-| **Sharpe Ratio** | Risk-adjusted return | (Rp - Rf) / σp |
-| **Sortino Ratio** | Downside risk-adjusted return | (Rp - Rf) / σd |
-| **Max Drawdown** | Maximum peak-to-trough decline | max(1 - Pt/Pmax) |
-| **Win Rate** | Percentage of profitable trades | Wins / Total |
-| **Profit Factor** | Gross profit / Gross loss | ΣProfit / ΣLoss |
-| **Calmar Ratio** | Return / Max Drawdown | CAGR / MDD |
-| **VaR (95%)** | Value at Risk | 5th percentile of returns |
-| **Expected Shortfall** | Conditional VaR | E[R | R < VaR] |
+### Limitations
 
-### 🛠️ Tech Stack
-
-| Technology | Description | Role |
-|------------|-------------|------|
-| **Python** | Core Language | Primary |
-| **Docker** | Containerization platform | Framework |
-| **NumPy** | Numerical computing | Framework |
-| **Pandas** | Data manipulation library | Framework |
-| HTML | 1 files | Supporting |
-
-### 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-### 👤 Author
-
-**Gabriel Demetrios Lafis**
-- GitHub: [@galafis](https://github.com/galafis)
-- LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
+- Does not connect to any real social media APIs
+- No visualization, file export, or web interface
+- Data is entirely synthetic/random
 
 ---
 
-## Português
-
-### 🎯 Visão Geral
-
-**Social Media Analytics Tool** é uma aplicação Python de nível profissional, complementada por HTML que demonstra práticas modernas de engenharia de software, incluindo arquitetura limpa, testes abrangentes, implantação containerizada e prontidão para CI/CD.
-
-A base de código compreende **228 linhas** de código-fonte organizadas em **3 módulos**, seguindo as melhores práticas do setor para manutenibilidade, escalabilidade e qualidade de código.
-
-### ✨ Funcionalidades Principais
-
-- **📊 Interactive Visualizations**: Dynamic charts with real-time data updates
-- **🎨 Responsive Design**: Adaptive layout for desktop and mobile devices
-- **📈 Data Aggregation**: Multi-dimensional data analysis and filtering
-- **📥 Export Capabilities**: PDF, CSV, and image export for reports
-- **🐳 Containerized**: Docker support for consistent deployment
-- **🏗️ Object-Oriented**: 2 core classes with clean architecture
-
-### 🏗️ Arquitetura
-
-```mermaid
-graph TB
-    subgraph Core["🏗️ Core"]
-        A[Main Module]
-        B[Business Logic]
-        C[Data Processing]
-    end
-    
-    subgraph Support["🔧 Support"]
-        D[Configuration]
-        E[Utilities]
-        F[Tests]
-    end
-    
-    A --> B --> C
-    D --> A
-    E --> B
-    F -.-> B
-    
-    style Core fill:#e1f5fe
-    style Support fill:#f3e5f5
-```
-
-### 🚀 Início Rápido
-
-#### Prerequisites
-
-- Python 3.12+
-- pip (Python package manager)
-
-#### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/galafis/Social-Media-Analytics-Tool.git
-cd Social-Media-Analytics-Tool
-
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-#### Running
-
-```bash
-# Run the application
-python src/main.py
-```
-
-### 🧪 Testing
-
-```bash
-# Run all tests
-pytest
-
-# Run with coverage report
-pytest --cov --cov-report=html
-
-# Run specific test module
-pytest tests/test_main.py -v
-
-# Run with detailed output
-pytest -v --tb=short
-```
-
-### 📁 Estrutura do Projeto
-
-```
-Social-Media-Analytics-Tool/
-├── docs/          # Documentation
-├── src/          # Source code
-│   └── main.py
-├── tests/         # Test suite
-│   └── test_analytics.py
-├── Dockerfile
-├── LICENSE
-├── README.md
-└── requirements.txt
-```
-
-### 📊 Performance Metrics
-
-The engine calculates comprehensive performance metrics:
-
-| Metric | Description | Formula |
-|--------|-------------|---------|
-| **Sharpe Ratio** | Risk-adjusted return | (Rp - Rf) / σp |
-| **Sortino Ratio** | Downside risk-adjusted return | (Rp - Rf) / σd |
-| **Max Drawdown** | Maximum peak-to-trough decline | max(1 - Pt/Pmax) |
-| **Win Rate** | Percentage of profitable trades | Wins / Total |
-| **Profit Factor** | Gross profit / Gross loss | ΣProfit / ΣLoss |
-| **Calmar Ratio** | Return / Max Drawdown | CAGR / MDD |
-| **VaR (95%)** | Value at Risk | 5th percentile of returns |
-| **Expected Shortfall** | Conditional VaR | E[R | R < VaR] |
-
-### 🛠️ Stack Tecnológica
-
-| Tecnologia | Descrição | Papel |
-|------------|-----------|-------|
-| **Python** | Core Language | Primary |
-| **Docker** | Containerization platform | Framework |
-| **NumPy** | Numerical computing | Framework |
-| **Pandas** | Data manipulation library | Framework |
-| HTML | 1 files | Supporting |
-
-### 🤝 Contribuindo
-
-Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request.
-
-### 📄 Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
-
-### 👤 Autor
-
-**Gabriel Demetrios Lafis**
+**Autor / Author:** Gabriel Demetrios Lafis
 - GitHub: [@galafis](https://github.com/galafis)
 - LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
