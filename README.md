@@ -5,6 +5,7 @@ Ferramenta simples de analise de dados sinteticos com pandas.
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB.svg)](https://python.org)
 [![pandas](https://img.shields.io/badge/pandas-2.0-150458.svg)](https://pandas.pydata.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker)](Dockerfile)
 
 [English](#english) | [Portugues](#portugues)
 
